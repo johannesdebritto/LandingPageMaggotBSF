@@ -19,4 +19,8 @@ module.exports = {
         },
     },
     plugins: [],
+    // Tambahan ini biar scroll-behavior bisa diatur lewat Tailwind
+    corePlugins: {
+        scrollBehavior: true,
+    },
 };

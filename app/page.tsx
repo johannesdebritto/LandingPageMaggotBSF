@@ -2,13 +2,12 @@ import Head from "next/head"; // Import Head untuk menambahkan meta tags
 import Navbar from "./components/Navbar"; // Import komponen Navbar
 import Hero from "./components/Hero"; // Import komponen Hero
 import Product from "./components/Product"; // Import komponen Product
-import Manfaat from "./components/Manfaat";
-import Footer from "./components/Footer";
-
+import Manfaat from "./components/Manfaat"; // Import komponen Manfaat
+import Footer from "./components/Footer"; // Import komponen Footer
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <>
       {/* SEO Meta Tags */}
       <Head>
         <title>Landing Page Maggot BSF</title>
@@ -27,19 +26,25 @@ export default function Home() {
         <link rel="canonical" href="URL_to_page" />
       </Head>
 
-      {/* Navbar */}
-      <Navbar />
-      
-      {/* Hero Section */}
-      <Hero />
+      <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Product Section */}
-      <Product />
+        {/* Main Content */}
+        <main>
+          {/* Hero Section */}
+          <Hero />
 
-      <Manfaat />
-      <Footer />
+          {/* Product Section */}
+          <Product />
 
+          {/* Manfaat Section */}
+          <Manfaat />
+        </main>
 
-    </div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </>
   );
 }

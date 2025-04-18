@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { X, Menu } from "lucide-react"; // lucide-react untuk ikon (bisa install: npm i lucide-react)
+import { X, Menu } from "lucide-react";
 
 const navItems = [
-  { label: "Beranda", href: "#home" },
+  { label: "Beranda", href: "#beranda" },
   { label: "Product", href: "#product" },
   { label: "Manfaat", href: "#manfaat" },
   { label: "Alamat", href: "#alamat" },
@@ -40,11 +40,11 @@ const Navbar = () => {
               <Link
                 href={item.href}
                 aria-label={item.label}
-                className="transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:text-xl"
+                className="transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:text-xl group-hover:text-green-600 group-hover:drop-shadow-[0_2px_4px_rgba(34,197,94,0.4)]"
               >
                 {item.label}
               </Link>
-              <span className="absolute left-1/2 bottom-[-2px] w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0" />
+              <span className="absolute left-1/2 bottom-[-4px] w-0 h-[2px] bg-green-600 opacity-0 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0 group-hover:opacity-100 group-hover:drop-shadow-[0_2px_4px_rgba(34,197,94,0.5)]" />
             </li>
           ))}
         </ul>
@@ -58,8 +58,8 @@ const Navbar = () => {
               <Link
                 href={item.href}
                 aria-label={item.label}
-                onClick={() => setIsOpen(false)} // biar menu nutup setelah klik
-                className="block transition-all duration-300 ease-in-out hover:scale-105"
+                onClick={() => setIsOpen(false)}
+                className="block transition-all duration-300 ease-in-out hover:scale-105 hover:text-green-600 hover:drop-shadow-[0_2px_4px_rgba(34,197,94,0.4)]"
               >
                 {item.label}
               </Link>
