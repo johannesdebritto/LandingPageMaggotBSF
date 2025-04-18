@@ -1,8 +1,7 @@
 'use client';
 
 import Head from 'next/head';
-import { FaKiwiBird, FaFish } from 'react-icons/fa';
-import { GiSnake } from 'react-icons/gi';
+import { FaRegCheckCircle } from 'react-icons/fa';
 
 const Manfaat = () => {
   return (
@@ -15,52 +14,78 @@ const Manfaat = () => {
         />
       </Head>
 
-      <main className="bg-yellow-50 text-gray-800 min-h-screen px-4 md:px-20 py-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      <main className="bg-white text-gray-800 min-h-screen px-4 md:px-20 py-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 font-montserrat">
           Manfaat Maggot BSF
         </h1>
-        <p className="text-center text-lg mb-10 max-w-2xl mx-auto">
+        <p className="text-center text-lg mb-10 max-w-2xl mx-auto font-lato">
           Maggot BSF (Black Soldier Fly) adalah pakan alami bergizi tinggi yang cocok untuk unggas, ikan, dan hewan eksotik. Berikut manfaatnya:
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* CARD 1 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <div className="bg-purple-100 p-4 rounded-full mb-4">
-              <FaKiwiBird className="text-purple-700 text-3xl" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          {/* UNGGAS */}
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-6 rounded-full mb-6 shadow-[0_4px_30px_rgba(34,197,94,1)] flex items-center justify-center w-[100px] h-[100px]">
+              <img src="/images/unggas.svg" alt="Unggas Icon" className="w-[50px] h-[50px]" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Untuk Unggas</h3>
-            <ul className="text-sm space-y-1 text-gray-600">
-              <li>Meningkatkan pertumbuhan ayam & itik.</li>
-              <li>Protein tinggi bantu pembentukan otot.</li>
-              <li>Alternatif pakan hemat dan alami.</li>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4">Untuk Unggas</h3>
+            <ul className="text-base md:text-lg space-y-3 text-gray-700 text-left">
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Meningkatkan pertumbuhan ayam & itik.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Protein tinggi bantu pembentukan otot.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Alternatif pakan hemat dan alami.
+              </li>
             </ul>
           </div>
 
-          {/* CARD 2 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <div className="bg-blue-100 p-4 rounded-full mb-4">
-              <FaFish className="text-blue-700 text-3xl" />
+          {/* IKAN */}
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-6 rounded-full mb-6 shadow-[0_4px_30px_rgba(34,197,94,1)] flex items-center justify-center w-[100px] h-[100px]">
+              <img src="/images/ikan.svg" alt="Ikan Icon" className="w-[50px] h-[50px]" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Untuk Ikan</h3>
-            <ul className="text-sm space-y-1 text-gray-600">
-              <li>Mempercepat pertumbuhan ikan.</li>
-              <li>Asam amino lengkap & mudah dicerna.</li>
-              <li>Ramah lingkungan & tidak mencemari air.</li>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4">Untuk Ikan</h3>
+            <ul className="text-base md:text-lg space-y-3 text-gray-700 text-left">
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Mempercepat pertumbuhan ikan.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Asam amino lengkap & mudah dicerna.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Ramah lingkungan & tidak mencemari air.
+              </li>
             </ul>
           </div>
 
-          {/* CARD 3 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <div className="bg-green-100 p-4 rounded-full mb-4">
-              <GiSnake className="text-green-700 text-3xl" />
+          {/* EXOTIC */}
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-6 rounded-full mb-6 shadow-[0_4px_30px_rgba(34,197,94,1)] flex items-center justify-center w-[100px] h-[100px]">
+              <img src="/images/camel.svg" alt="Camel Icon" className="w-[50px] h-[50px]" />
             </div>
-
-            <h3 className="text-xl font-semibold mb-2">Untuk Hewan Eksotik</h3>
-            <ul className="text-sm space-y-1 text-gray-600">
-              <li>Cocok untuk reptil & hewan kecil lainnya.</li>
-              <li>Nutrisi lengkap untuk pertumbuhan optimal.</li>
-              <li>Bisa disimpan hidup atau dikeringkan.</li>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4">Untuk Hewan Eksotik</h3>
+            <ul className="text-base md:text-lg space-y-3 text-gray-700 text-left">
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Cocok untuk reptil & hewan kecil lainnya.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Nutrisi lengkap untuk pertumbuhan.
+              </li>
+              <li className="flex items-start">
+                <FaRegCheckCircle className="text-green-600 mr-3 mt-1 text-lg" />
+                Bisa disimpan hidup atau dikeringkan.
+              </li>
             </ul>
           </div>
         </div>

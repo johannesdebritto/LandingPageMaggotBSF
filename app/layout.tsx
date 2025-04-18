@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";  // Mengimpor font Inter dari Google Fonts
+import { Inter, Montserrat, Lato } from "next/font/google"; // Import semua font yang diperlukan
 import "./globals.css";
 
+// Daftar font yang digunakan
 const inter = Inter({
-  variable: "--font-inter",  // Menetapkan variabel CSS untuk font Inter
+  variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Tentukan berat font (400 = regular, 700 = bold)
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -18,8 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${montserrat.variable} ${lato.variable}`} // Gunakan ketiga font ini
+    >
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
