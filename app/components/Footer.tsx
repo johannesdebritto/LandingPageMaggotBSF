@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -26,14 +26,19 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-6 font-montserrat">Kontak & Info</h2>
           <ul className="space-y-4 text-lg text-gray-300">
-            <li className="flex items-center space-x-3 font-lato">
-              <FaMapMarkerAlt className="text-white-800 text-2xl" />
-              <span>
-                <strong>Alamat:</strong> Maduasri Blok B No.30, Krobyongan, Tohudan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173
-              </span>
+            <li className="flex items-start space-x-3 font-lato">
+              <FaMapMarkerAlt className="text-white text-2xl md:text-3xl mt-1" />
+              <div className="text-sm sm:text-base">
+                <strong>Alamat:</strong>
+                <br />
+                Maduasri Blok B No.30, Krobyongan, Tohudan, Kec. Colomadu,
+                <br />
+                Kabupaten Karanganyar, Jawa Tengah 57173
+              </div>
             </li>
+
             <li className="flex items-center space-x-3 font-lato">
-              <FaPhoneAlt className="text-white-800 text-2xl" />
+              <FaPhoneAlt className="text-white text-2xl md:text-3xl" />
               <span>
                 <strong>No HP:</strong>{" "}
                 <a href="https://wa.me/6283170416820" className="text-blue-300" target="_blank" rel="noopener noreferrer">
@@ -42,7 +47,7 @@ const Footer = () => {
               </span>
             </li>
             <li className="flex items-center space-x-3 font-lato">
-              <FaInstagram className="text-white-800 text-2xl" />
+              <FaInstagram className="text-white text-2xl md:text-3xl" />
               <span>
                 <strong>Instagram:</strong>{" "}
                 <a href="https://www.instagram.com/mitragot?igsh=MTNuMnZpZWg3ODdtOQ==" className="text-blue-300" target="_blank" rel="noopener noreferrer">
@@ -51,7 +56,7 @@ const Footer = () => {
               </span>
             </li>
             <li className="flex items-center space-x-3 font-lato">
-              <FaFacebook className="text-white-800 text-2xl" />
+              <FaFacebook className="text-white text-2xl md:text-3xl" />
               <span>
                 <strong>Facebook:</strong>{" "}
                 <a href="https://www.facebook.com/share/19HXEnqJqR/" className="text-blue-300" target="_blank" rel="noopener noreferrer">
