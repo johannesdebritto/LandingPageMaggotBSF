@@ -17,7 +17,7 @@ const Hero: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto w-full gap-8 relative">
           {/* Kolom Gambar - muncul duluan di mobile */}
           <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden order-1 md:order-2">
-            <Image src="/images/hero.svg" alt="Ilustrasi Maggot BSF Colomadu" fill className="object-contain object-center md:object-right translate-x-0 md:translate-x-2 lg:translate-x-4" priority />
+            <Image src="/images/hero.svg" alt="Ilustrasi Maggot BSF Colomadu" fill className="object-contain object-center md:object-right translate-x-0 md:translate-x-2 lg:translate-x-4 animate-fadeIn delay-100" priority />
           </div>
 
           {/* Kolom Teks */}

@@ -1,29 +1,19 @@
-'use client';
+"use client";
 
-import Head from 'next/head';
-import { FaRegCheckCircle } from 'react-icons/fa';
+import Head from "next/head";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 const Manfaat = () => {
   return (
     <>
       <Head>
         <title>Manfaat Maggot BSF untuk Unggas, Ikan, dan Hewan Eksotik</title>
-        <meta
-          name="description"
-          content="Pelajari manfaat maggot BSF sebagai pakan unggas, ikan, dan hewan eksotik yang kaya protein dan ramah lingkungan."
-        />
+        <meta name="description" content="Pelajari manfaat maggot BSF sebagai pakan unggas, ikan, dan hewan eksotik yang kaya protein dan ramah lingkungan." />
       </Head>
 
-      <section
-        id="manfaat"
-        className=" bg-white text-gray-800 min-h-screen px-4 md:px-20 py-10"
-      >
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 font-montserrat text-green-800 ">
-          Manfaat Maggot BSF
-        </h1>
-        <p className="text-center text-lg mb-10 max-w-2xl mx-auto font-lato">
-          Maggot BSF (Black Soldier Fly) adalah pakan alami bergizi tinggi yang cocok untuk unggas, ikan, dan hewan eksotik. Berikut manfaatnya:
-        </p>
+      <section id="manfaat" className=" bg-white text-gray-800 min-h-screen px-4 md:px-20 py-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 font-montserrat text-green-800 ">Manfaat Maggot BSF</h1>
+        <p className="text-center text-lg mb-10 max-w-2xl mx-auto font-lato">Maggot BSF (Black Soldier Fly) adalah pakan alami bergizi tinggi yang cocok untuk unggas, ikan, dan hewan eksotik. Berikut manfaatnya:</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {/* UNGGAS */}
