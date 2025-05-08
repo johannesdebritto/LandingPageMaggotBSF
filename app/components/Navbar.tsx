@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="relative flex items-center h-8">
           <Link href="/" aria-label="Home page" className="flex items-center space-x-2">
             {/* Logo */}
-            <Image src="/images/logos.svg" alt="Maggot BSF Logo" width={60} height={32} className="object-contain scale-100" priority />
+            <Image src="/images/logo.svg" alt="Maggot BSF Logo" width={60} height={32} className="object-contain scale-100" priority />
             {/* Teks */}
             <span className="text-lg font-bold  text-green-900 ">MITRAGOT</span>
           </Link>
