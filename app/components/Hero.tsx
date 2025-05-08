@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Eye } from "lucide-react";
+
 import Head from "next/head"; // Import Head dari next/head
 
 const Hero: FC = () => {
